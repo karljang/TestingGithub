@@ -1,0 +1,14 @@
+name: a
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  SampleJob:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello Action!"
+      
